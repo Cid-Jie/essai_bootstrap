@@ -1,0 +1,89 @@
+:root {
+    --bs-light-rgb: 16, 69, 178;
+    --bs-primary: rgb(var(--bs-light-rgb));
+    --bs-white: #fff;
+}
+
+.navbar-light .navbar-brand{
+    color: var(--bs-white);
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: var(--bs-white);
+}
+
+.navbar-collapse{
+    flex: none;
+}
+
+h2{
+    text-align: center;
+    margin: 3vw;
+    justify-content: space-around;
+}
+
+.all_cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-body-content img{
+    width: 100vw;
+    height: 50vw;
+}
+
+.card{
+    margin-bottom: 5vw;
+}
+
+a.btn.btn-primary{
+    width: 100%;
+    background-color: var(--bs-primary);
+}
+
+.second_content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    margin-top: 5vw;
+    background-color: var(--bs-primary);
+    width: 100%;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1100px){
+    .navbar-collapse{
+        flex-basis: auto;
+    }
+
+    .card-text{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+    .navbar-light .navbar-brand{
+        font-size: large;
+    }
+
+    .card-text{
+        display: none;
+    }
+
+}
